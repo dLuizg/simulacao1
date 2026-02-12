@@ -1,0 +1,12 @@
+@startuml
+start
+:Cliente acessa o app;
+:Seleciona produto;
+:Confirma compra;
+if (Pagamento aprovado?) then (sim)
+  :Exibe recibo;
+else (não)
+  :Exibe erro;
+endif
+stop
+@enduml
